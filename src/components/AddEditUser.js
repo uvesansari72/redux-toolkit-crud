@@ -114,6 +114,7 @@ const AddEditUser = (props) => {
 
                   <Index.TextField
                     fullWidth
+                    type="password"
                     name="user_password"
                     {...register("user_password", {
                       required: "User password is required",
