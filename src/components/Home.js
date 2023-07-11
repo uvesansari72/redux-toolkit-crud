@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Index from "./Index";
-import { deleteUser, getAllUsers } from "../Api/userApi";
+import { deleteUser, getAllUsers } from "../redux/user/userApi";
 import AddEditUser from "./AddEditUser";
 import Loader from "./Loader";
 

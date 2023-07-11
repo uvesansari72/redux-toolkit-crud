@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Index from "./Index";
 import { useForm } from "react-hook-form";
-import { createUser, getAllUsers, updateUser } from "../Api/userApi";
+import { createUser, getAllUsers, updateUser } from "../redux/user/userApi";
 import Loader from "./Loader";
 
 const AddEditUser = (props) => {
@@ -17,6 +17,7 @@ const AddEditUser = (props) => {
   const loading = Index.useSelector((state) => state.userReducer.loading);
 
   const onSubmit = (data) => {
+    
     const urlencoded = new URLSearchParams();
     urlencoded.append("user_name", data.user_name);
     urlencoded.append("user_email", data.user_email);

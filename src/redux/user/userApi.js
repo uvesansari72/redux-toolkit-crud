@@ -1,4 +1,4 @@
-import Axiosinstance from "../services/DataService";
+import Axiosinstance from "../../services/DataService";
 import { createAsyncThunk } from "@reduxjs/toolkit";
 
 export const getAllUsers = createAsyncThunk('user/getAllUser', async () =>{  // user/getAlluser will behave as a action

@@ -4,7 +4,7 @@ import {
   createUser,
   deleteUser,
   updateUser,
-} from "../../Api/userApi";
+} from "./userApi";
 import Index from "../../components/Index";
 
 const userSlice = createSlice({
